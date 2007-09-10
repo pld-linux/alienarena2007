@@ -59,8 +59,9 @@ Alien Arena.
 %setup -q -n %{name}
 rm -f ../GH3D.txt ../GamersHell.url
 
-# undos the source
-find '(' -name '*.c' -o -name '*.h' ')' -print0 | xargs -0 sed -i -e 's,\r$,,'
+for file in lst cfg txt html lng h c ; do
+        find ./ -noleaf -type f -name \*.$file -exec dos2unix '{}' \;
+done
 
 %build
 %{__make} \
