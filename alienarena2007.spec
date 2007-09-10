@@ -12,6 +12,7 @@ Source0:	http://gd.tuwien.ac.at/opsys/linux/gentoo/distfiles/%{name}-%{dateversi
 # Source0-md5:	08c20b29d0ed529769cab4952e8cfe94
 URL:		http://red.planetarena.org/
 BuildRequires:	Mesa-libGLU-devel
+BuildRequires:	dos2unix
 BuildRequires:	libjpeg-devel
 BuildRequires:	SDL-devel
 BuildRequires:	rpmbuild(macros) >= 1.228
