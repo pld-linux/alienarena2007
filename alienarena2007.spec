@@ -4,12 +4,12 @@
 Summary:	Alien Arena - freeware online deathmatch FPS game
 Summary(pl.UTF-8):Alien Arena
 Name:		alienarena%{relyear}
-Version:	6.05
+Version:	6.10
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://gd.tuwien.ac.at/opsys/linux/gentoo/distfiles/%{name}-%{dateversion}-linux.zip
-# Source0-md5:	08c20b29d0ed529769cab4952e8cfe94
+# Source0-md5:	65d2948fa636cbc28c82da2264df2fea
 URL:		http://red.planetarena.org/
 BuildRequires:	Mesa-libGLU-devel
 BuildRequires:	dos2unix
