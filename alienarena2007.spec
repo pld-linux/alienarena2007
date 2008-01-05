@@ -16,6 +16,7 @@ BuildRequires:	SDL-devel
 BuildRequires:	dos2unix
 BuildRequires:	libjpeg-devel
 BuildRequires:	rpmbuild(macros) >= 1.228
+BuildRequires:	unzip
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXxf86dga-devel
@@ -97,8 +98,8 @@ done
 %{__make} \
 	CC="%{__cc}" \
 	RELEASE_CFLAGS='$(BASE_CFLAGS) %{rpmcflags}' \
-	X11BASE=/usr \
-	LOCALBASE=/usr \
+	X11BASE=%{_prefix} \
+	LOCALBASE=%{_prefix} \
 	_LIB=%{_lib}
 
 %install
