@@ -95,8 +95,11 @@ done
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags} -ldl" \
-	LDFLAGS="%{rpmldflags}"
+	CC="%{__cc}" \
+	RELEASE_CFLAGS='$(BASE_CFLAGS) %{rpmcflags}' \
+	X11BASE=/usr \
+	LOCALBASE=/usr \
+	_LIB=%{_lib}
 
 %install
 rm -rf $RPM_BUILD_ROOT
