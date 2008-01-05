@@ -18,6 +18,8 @@ BuildRequires:	libjpeg-devel
 BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXxf86dga-devel
+BuildRequires:	xorg-lib-libXxf86vm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
