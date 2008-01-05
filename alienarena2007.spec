@@ -1,3 +1,6 @@
+# TODO:
+# - package files and install them
+# - strip spaces from filenames in docs
 %define		relyear		2007
 %define		dateversion	20070613
 #
@@ -123,32 +126,32 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc changelog README
-%lang(nl) %doc docs/AA Dutch.txt
-%lang(fr) %doc docs/AA French.txt
-%lang(de) %doc docs/AA German.txt
-%lang(el) %doc docs/AA Greek.txt
-%lang(hu) %doc docs/AA Hungarian.txt
-%lang(it) %doc docs/AA Italian.txt
-%lang(pl) %doc docs/AA Polish.txt
-%lang(pt) %doc docs/AA Portuguese.txt
-%lang(ru) %doc docs/AA Russian.txt
-%lang(es) %doc docs/AA_ES.txt
-%attr(755,root,root) %{_bindir}/alien-arena
-%{_desktopdir}/alien-arena.desktop
-%{_pixmapsdir}/alien-arena.xpm
+#%doc changelog README
+#%lang(nl) %doc docs/AA Dutch.txt
+#%lang(fr) %doc docs/AA French.txt
+#%lang(de) %doc docs/AA German.txt
+#%lang(el) %doc docs/AA Greek.txt
+#%lang(hu) %doc docs/AA Hungarian.txt
+#%lang(it) %doc docs/AA Italian.txt
+#%lang(pl) %doc docs/AA Polish.txt
+#%lang(pt) %doc docs/AA Portuguese.txt
+#%lang(ru) %doc docs/AA Russian.txt
+#%lang(es) %doc docs/AA_ES.txt
+#%attr(755,root,root) %{_bindir}/alien-arena
+#%{_desktopdir}/alien-arena.desktop
+#%{_pixmapsdir}/alien-arena.xpm
 
 %files data
 %defattr(644,root,root,755)
 
 %files server
 %defattr(644,root,root,755)
-%attr(754,root,root) /etc/rc.d/init.d/%{name}
-%config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/%{name}
-%attr(755,root,root) %{_bindir}/alien-arena-server
-alien-arena/crded
-alien-arena/kill-runaway-crded
-alien-arena/launch-server
-alien-arena/rcon
-alien-arena/svstat
-%{_mandir}/man6/alien-arena-server.6*
+#%attr(754,root,root) /etc/rc.d/init.d/%{name}
+#%config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/%{name}
+#%attr(755,root,root) %{_bindir}/alien-arena-server
+#alien-arena/crded
+#alien-arena/kill-runaway-crded
+#alien-arena/launch-server
+#alien-arena/rcon
+#alien-arena/svstat
+#%{_mandir}/man6/alien-arena-server.6*
